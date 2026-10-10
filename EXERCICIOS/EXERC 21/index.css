@@ -1,0 +1,51 @@
+@charset 'UTF-8';
+
+body {
+    background-color: aliceblue;
+}
+
+
+h1#principal {
+    color: rgb(0, 0, 0);
+    background-color: yellow;
+}
+
+h1 {
+    background-color: black;
+    color: aliceblue;
+}
+
+h2 {
+    background-color: aqua;
+    color: blue;
+}
+
+.h2s {
+    background-color: rgb(169, 182, 182);
+}
+
+p {
+    background-color: blueviolet;
+    color: orange;
+}
+
+p#sub1 {
+    color: blue;
+    background-color: black;
+}
+
+p.pes1 {
+    color: antiquewhite;
+    background-image: linear-gradient(red, black, green);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.322);
+}
+
+li {
+    color: rgb(107, 107, 4);
+    background-color: black;
+}
+
+li#sub1 {
+    color: bisque;
+    background-color: black;
+}

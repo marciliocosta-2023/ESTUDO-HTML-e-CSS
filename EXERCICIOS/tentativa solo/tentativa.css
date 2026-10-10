@@ -1,0 +1,34 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: Dantene;
+    src: url(Dantene.otf);
+}
+
+body {
+    background-image: linear-gradient(to right,green, rgb(71, 71, 165), rgb(192, 75, 75), white) ;
+}
+
+h1#principal {
+    background-color: rgba(0, 128, 0, 0.596);
+    color: wheat;
+}
+
+h1 {
+    background-color: rgb(231, 231, 230);
+}
+
+h2.subtitulo {
+    background-image: linear-gradient(to left, rgba(0, 128, 0, 0.521), white);
+    color: black;
+}
+
+.verdao {
+    background-image: linear-gradient(to left, rgba(83, 184, 83, 0.774), white);
+    color: black;
+}
+
+p {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.37), rgba(255, 255, 255, 0.384), rgba(255, 166, 0, 0.418));
+    color: yellowgreen;
+}

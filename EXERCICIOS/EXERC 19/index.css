@@ -1,0 +1,38 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: Dantene ;
+    src: url(Dantene.otf);
+}
+
+@font-face {
+    font-family: Kablammo ;
+    src: url(Kablammo-Regular-VariableFont_MORF.ttf);
+}
+
+@font-face {
+    font-family: Jraot;
+    src: url(Fontes/Jraot-Regular.ttf);
+}
+
+@font-face {
+    font-family: Another;
+    src: url(Fontes/aAnotherTag.otf);
+}
+
+h1 {
+    font-family: Dantene;
+    font-style: italic;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.459);
+}
+
+p {
+    font-family: Kablammo;
+    font-style: italic;
+    text-shadow: 1px 1px 1px rgba(0, 0, 255, 0.089);
+}
+
+h2 {
+    font-family: Jraot;
+}

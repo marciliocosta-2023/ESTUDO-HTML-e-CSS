@@ -1,0 +1,40 @@
+@charset 'UTF-8';
+
+div {
+    background-color: yellowgreen;
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    text-align: center;
+    display: inline-block;
+}
+
+div:hover {
+    background-color: black;
+    color: white;
+}
+
+#d2 {
+    background-color: aliceblue;
+}
+
+#d2:hover {
+    color: brown;
+    background-color: aqua;
+}
+
+p#escondido {
+    color: yellowgreen;
+}
+
+p#escondido:hover {
+    color: blanchedalmond;
+}
+
+p#escondido > a {
+    color: yellowgreen;
+}
+
+p#escondido:hover > a {
+    color: rgb(50, 205, 63);
+}

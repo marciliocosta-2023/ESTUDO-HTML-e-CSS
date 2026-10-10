@@ -1,0 +1,41 @@
+@charset 'UTF-8';
+
+h1 {
+    margin: 50px auto 72px auto;
+    
+
+    padding: 20px 20px 30px 77px;
+
+    background-color: lightcoral;
+
+    height: 200px;
+    width: 330px;
+
+    border: 10px solid blue;
+
+    outline: 20px groove black;
+    
+}
+
+a {
+    border: 3px ridge aqua;
+
+    padding-top: 1px;
+    
+}
+
+a:hover {
+    background-color: black;
+
+    color:white;
+
+    border: 5px groove red;
+}
+
+p {
+    padding: 50px 10px 90px 22px;
+
+    margin: auto 40px 55px 77px 99px;
+
+    border: 10px dotted black;
+}
