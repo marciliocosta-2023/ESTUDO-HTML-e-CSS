@@ -1,0 +1,104 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: 'Cordel';
+    src: url('Idiqlat/Idiqlat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Cordel2';
+    src: url('Sriracha/Sriracha-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Cordel3';
+    src: url('Passion_One/PassionOne-Bold.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 80px;
+}
+
+header > h1 {
+    font-family: 'Cordel3', sans-serif;
+    font-weight: bold;
+    font-size: 4em;
+}
+
+p#autor {
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a#main {
+    text-decoration: none;
+    color: white;
+    font-family: 'Cordel2', sans-serif;
+}
+
+a#main:hover {
+    color: black;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+article {
+    background-color: white;
+    color: black;
+    font-family: 'Cordel2';
+    font-size: 1.8em;
+    text-align: center;
+    padding: 80px;
+}
+
+article > p {
+    word-spacing: 2px;
+    margin-left: 40px;
+    padding: 40px;
+    line-height: 2em;
+}
+
+#dentro {
+    background: url(imagens/background001.jpg) center right no-repeat fixed;
+    height: 550px;
+}
+
+div {
+    width: 30%;
+    padding: 50px 80px;
+    margin: 0 auto;
+    display: block;
+}
+
+div > p {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.384);
+    width: 100%;
+    line-height: 2em;
+    padding: 20px;
+}
+
+#dentro2 {
+    background: url(imagens/background002.jpg) center left no-repeat fixed;
+    height: 550px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer  {
+    font-family: 'Cordel';
+}
