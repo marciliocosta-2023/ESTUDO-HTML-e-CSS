@@ -56,7 +56,7 @@ article {
     background-color: white;
     color: black;
     font-family: 'Cordel2';
-    font-size: 3.0vw;
+    font-size: 3.3vw;
     text-align: center;
     margin: 0;
     padding: 0px;  
@@ -75,6 +75,7 @@ article > p {
     background: url(imagens/background001.jpg) center right no-repeat fixed;
     margin: 0;
     padding: 0px;
+    box-shadow: inset 3px 3px 3px 3px rgba(0, 0, 0, 0.459);
 }
 
 #dentro > p {
@@ -92,6 +93,7 @@ article > p {
     background: url(imagens/background002.jpg) center left no-repeat fixed;
     margin: 0;
     padding: 0px;
+    box-shadow: inset 3px 3px 3px 3px rgba(0, 0, 0, 0.459);
 }
 
 #dentro2 > p {
