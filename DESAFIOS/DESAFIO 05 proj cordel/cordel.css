@@ -65,7 +65,7 @@ article {
 article > p {
     word-spacing: 2px;
     margin: auto;
-    padding: 40px;
+    padding: 20px;
     line-height: 2em;
     display: block;
     align-items: center;
@@ -81,6 +81,7 @@ article > p {
     color: white;
     background-color: rgba(0, 0, 0, 0.384);
     line-height: 2em;
+    padding: 20px;
     padding: 55px 20px;
     display: block;
     align-items: center;
@@ -97,8 +98,7 @@ article > p {
     color: white;
     background-color: rgba(0, 0, 0, 0.384);
     line-height: 2em;
-   
-    padding: 55px 20px;
+    padding: 20px;
     display: block;
     align-items: center;
 }
