@@ -20,11 +20,6 @@
     padding: 0;
 }
 
-html body {
-    
-    min-height: 100vh;
-}
-
 header {
     background-color: black;
     color: white;
@@ -57,7 +52,7 @@ a#main:hover {
     border-radius: 5px;
 }
 
-section {
+article {
     background-color: white;
     color: black;
     font-family: 'Cordel2';
@@ -67,7 +62,7 @@ section {
     padding: 0px;  
 }
 
-section > p {
+article > p {
     word-spacing: 2px;
     margin: auto;
     padding: 20px;
@@ -103,7 +98,8 @@ section > p {
     color: white;
     background-color: rgba(0, 0, 0, 0.384);
     line-height: 2em;
-    padding: 20px;
+   
+    padding: 55px 20px;
     display: block;
     align-items: center;
 }
