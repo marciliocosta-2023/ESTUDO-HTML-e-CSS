@@ -58,7 +58,8 @@ article {
     font-family: 'Cordel2';
     font-size: 1.8em;
     text-align: center;
-    padding: 80px;  
+    margin: 0;
+    padding: 0px;  
 }
 
 article > p {
