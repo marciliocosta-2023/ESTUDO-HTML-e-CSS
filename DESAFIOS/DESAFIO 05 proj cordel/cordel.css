@@ -39,6 +39,10 @@ p#autor {
     font-family: 'Courier New', Courier, monospace;
 }
 
+main {
+    max-width: 100%;
+}
+
 a#main {
     text-decoration: none;
     color: white;
