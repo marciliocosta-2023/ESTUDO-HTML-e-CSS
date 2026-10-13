@@ -59,9 +59,6 @@ article {
     font-size: 1.8em;
     text-align: center;
     padding: 80px;  
-    height: 550px;
-    margin: 0;
-    padding: 0px;
 }
 
 article > p {
@@ -76,7 +73,6 @@ article > p {
 
 #dentro {
     background: url(imagens/background001.jpg) center right no-repeat fixed;
-    height: 550px;
     margin: 0;
     padding: 0px;
 }
@@ -85,7 +81,6 @@ article > p {
     color: white;
     background-color: rgba(0, 0, 0, 0.384);
     line-height: 2em;
-    height: 660px;
     padding: 55px 20px;
     display: block; 
     max-width: 550px;
@@ -95,7 +90,6 @@ article > p {
 
 #dentro2 {
     background: url(imagens/background002.jpg) center left no-repeat fixed;
-    height: 550px;
     margin: 0;
     padding: 0px;
 }
@@ -104,7 +98,7 @@ article > p {
     color: white;
     background-color: rgba(0, 0, 0, 0.384);
     line-height: 2em;
-    height: 660px;
+   
     padding: 55px 20px;
     display: block;
     max-width: 500px;
