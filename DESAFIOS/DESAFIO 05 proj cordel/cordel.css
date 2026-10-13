@@ -66,7 +66,6 @@ article > p {
     margin: auto;
     padding: 40px;
     line-height: 2em;
-    max-width: 400px;
     display: block;
     align-items: center;
 }
@@ -82,8 +81,7 @@ article > p {
     background-color: rgba(0, 0, 0, 0.384);
     line-height: 2em;
     padding: 55px 20px;
-    display: block; 
-    max-width: 400px;
+    display: block;
     align-items: center;
     margin-top: 40px;
 }
@@ -101,7 +99,6 @@ article > p {
    
     padding: 55px 20px;
     display: block;
-    max-width: 400px;
     align-items: center;
 }
 
