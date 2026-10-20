@@ -10,9 +10,85 @@ body {
 
 
 #celular {
-    display: block;
     margin: auto;
+    display: block;
     padding: 10px;
-    width: 400px;
-    height: 80%;
+    width: 330px;
+    height: 640px;
+}
+
+#dentro {
+    height: 472px;
+    width: 266px;
+    position: absolute;
+    left: 531px;
+    top: 91px;
+}
+
+img {
+    padding: 10px;
+}
+
+img:hover {
+    border: 1px solid white;
+    background-color: rgb(231, 231, 231);
+}
+
+.home {
+    height: 80px;
+    width: 80px;
+    border-radius: 1500px 1500px 1500px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.yt {
+    height: 80px;
+    width: 80px;
+    border-radius: 1500px 1500px 1500px;
+    position: absolute;
+    right: 0px;
+    top: 100px;
+}
+
+.git {
+    height: 80px;
+    width: 80px;
+    border-radius: 1500px 1500px 1500px;
+    position: absolute;
+    right: 0px;
+    top: 200px;
+}
+
+.insta {
+    height: 80px;
+    width: 80px;
+    border-radius: 1500px 1500px 1500px;
+    position: absolute;
+    right: 0px;
+    top: 300px;
+}
+
+.tt {
+    height: 80px;
+    width: 80px;
+    border-radius: 1500px 1500px 1500px;
+    position: absolute;
+    right: 0px;
+    top: 400px;
+}
+
+.face {
+    height: 80px;
+    width: 80px;
+    border-radius: 1500px 1500px 1500px;
+    position: absolute;
+    right: 0px;
+    top: 500px;
+}
+
+iframe > frame {
+    width: 300px;
+    height: 600px;
 }
