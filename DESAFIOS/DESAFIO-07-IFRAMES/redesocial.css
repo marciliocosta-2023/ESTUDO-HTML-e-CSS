@@ -17,14 +17,23 @@ body {
     height: 640px;
 }
 
+#celular:hover {
+    background-color: none;
+}
+
 #dentro {
     display: block;
     position: absolute;
-    height: 73vh;
-    width: 19.8%;
-    top: 14.4%;
-    left: 39.2vw;
+    height: 75.5vh;
+    width: 280px;
+    top: 14%;
+    left: 39.8%;
     
+}
+
+img#celular:hover {
+    background-color: rgba(222, 184, 135, 0);
+    border: 0px;
 }
 
 img {
@@ -90,7 +99,3 @@ img:hover {
     top: 500px;
 }
 
-iframe > frame {
-    width: 300px;
-    height: 600px;
-}
