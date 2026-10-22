@@ -27,6 +27,10 @@ main {
     
 }
 
+#celular:hover {
+    background-color: none;
+}
+
 #dentro {
     position: relative;
     top: 73px;
@@ -43,8 +47,9 @@ img {
 
 img:hover {
     box-shadow: 1px 1px 1px rgb(24, 23, 23);
-    border: 2px solid rgb(255, 255, 255);
-    transition: 0.3s border;
+    border: 5px solid rgb(255, 255, 255);
+    transition: 0.9s;
+
 }
 
 .home {
@@ -52,7 +57,8 @@ img:hover {
     width: 60px;
     border-radius: 1500px 1500px 1500px;
     position: absolute;
-    left: 35px;
+    right: 0px;
+    top: 0px;
 }
 
 .yt {
@@ -60,7 +66,9 @@ img:hover {
     width: 60px;
     border-radius: 1500px 1500px 1500px;
     position: absolute;
-    left: 110px;
+    background-size: cover;
+    right: 0px;
+    top: 100px;
 }
 
 .git {
@@ -68,7 +76,8 @@ img:hover {
     width: 60px;
     border-radius: 1500px 1500px 1500px;
     position: absolute;
-    left: 180px;
+    right: 0px;
+    top: 200px;
 }
 
 .insta {
@@ -76,7 +85,8 @@ img:hover {
     width: 60px;
     border-radius: 1500px 1500px 1500px;
     position: absolute;
-    left: 250px;
+    right: 0px;
+    top: 300px;
 }
 
 .tt {
@@ -84,7 +94,13 @@ img:hover {
     width: 60px;
     border-radius: 1500px 1500px 1500px;
     position: absolute;
-    left: 320px;
+    right: 0px;
+    top: 400px;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 
 .face {
@@ -92,7 +108,8 @@ img:hover {
     width: 60px;
     border-radius: 1500px 1500px 1500px;
     position: absolute;
-    left: 390px;
+    right: 0px;
+    top: 500px;
 }
 
 
