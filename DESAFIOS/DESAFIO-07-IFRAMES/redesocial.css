@@ -27,10 +27,6 @@ main {
     
 }
 
-#celular:hover {
-    background-color: none;
-}
-
 #dentro {
     position: relative;
     top: 73px;
@@ -47,7 +43,7 @@ img {
 
 img:hover {
     box-shadow: 1px 1px 1px rgb(24, 23, 23);
-    border: 5px solid rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
     transition: 0.3s border;
 }
 
