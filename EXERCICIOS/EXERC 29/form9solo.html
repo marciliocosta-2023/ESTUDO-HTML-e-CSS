@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>MULTIPLICACAO ENTRE NUMEROS!</h1>
+
+    <form action="cadastro.php">
+
+        <fieldset>
+
+            <legend>
+                Qual sua idade?
+            </legend>
+
+            <p>
+                <label for="numero1">EM QUE ANO ESTAMOS?:</label>
+                <input type="text" name="numero1" id="numero1" min="2026" max="2026" oninput="resultado.innerHTML = Number(numero1.value) - Number(numero2.value)">
+            </p>
+
+            <p>
+                <label for="numero2">EM QUE ANO VOCÊ NASCEU?:</label>
+                <input type="text" name="numero2" id="numero2" min="1900" max="2010" oninput="resultado.innerHTML = Number(numero1.value) - Number(numero2.value)">
+            </p>
+
+            <label for="resultado">VOCE TEM </label>
+            <output id="resultado"></output>
+            <label for="resultado2"><strong>ANOS</strong></label>
+
+        </fieldset>
+    </form>
+</body>
+</html>

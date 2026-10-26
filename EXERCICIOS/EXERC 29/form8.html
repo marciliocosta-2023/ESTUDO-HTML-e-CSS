@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FORMULARIO COM OUTPUT</h1>
+
+    <form action="cadastro.php">
+
+        <fieldset>
+
+            <legend>
+                COM OUTPUT
+            </legend>
+
+            <p>
+                <label for="inum1">NUMERO:</label>
+                <input type="text" name="inum1" id="inum1" min="1" max="9" oninput="soma.innerHTML = Number(inum1.value) * Number(inum2.value)">
+            </p>
+
+            <p>
+                <label for="inum2">NUMERO:</label>
+                <input type="text" name="inum2" id="inum2" min="1" max="9" oninput="soma.innerHTML = Number(inum1.value) * Number(inum2.value)">
+            </p>
+
+            <label for="soma">MULTIPLICACAO RESULTADO:::</label>
+            <output id="soma"></output>
+
+
+
+        </fieldset>
+
+    </form>
+</body>
+</html>

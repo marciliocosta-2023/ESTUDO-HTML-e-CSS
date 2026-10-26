@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Exemplo de formularios</h1>
+    <form action="cadastro.php">
+        <fieldset>
+
+            <legend>
+                ESTADO
+            </legend>
+
+            <label for="iest">ESTADO</label>
+                <select name="estado" id="iest">
+
+                    <optgroup label="Regiao 1">
+                        <option value="sp">São Paulo </option>
+                        <option value="rj">Rio de Janeiro</option>
+                        <option value="go">Goias</option>
+                    </optgroup>
+
+                    <optgroup label="Regiao 2">
+                        <option value="am">Amazona</option>
+                        <option value="pr">Paraná</option>
+                        <option value="ac">Acre</option>
+                    </optgroup>
+
+                    <optgroup label="Regiao 3">
+                        <option value="ba">Bahia</option>
+                        <option value="mg">Minas Gerais</option>
+                        <option value="rs">Rio Grande do Sul</option>
+                    </optgroup>
+
+                </select>
+
+                <p>
+                    <label for="iprof">PROFISSÃO:</label>
+                    <input type="text" name="iprof" id="iprof" list="lstprof">
+                    <datalist id="lstprof">
+                        <option value="ADMINISTRADOR">Administrador</option>
+                        <option value="PROGRAMADOR">Programador</option>
+                        <option value="PROFESSOR">Professor</option>
+                        <option value="COZINHEIRO">Cozinheiro</option>
+                        <option value="ADESTRADOR">Adestrador</option>
+                        <option value="ADMINISTRADOR">Administrador</option>
+                        <option value="PROGRAMADOR">Programador</option>
+                        <option value="PROFESSOR">Professor</option>
+                        <option value="COZINHEIRO">Cozinheiro</option>
+                        <option value="ADESTRADOR">Adestrador</option>
+                    </datalist>
+                </p>
+                
+                <p>
+                    <label for="imsg">MENSAGEM</label> <br>
+                    <textarea name="imsg" id="imsg" cols="30" rows="10" placeholder="DIGITE AQUI:" ></textarea>
+                </p>
+
+                <p>
+                    <input type="submit" value="ENVIAR">
+                    <input type="reset" value="LIMPAR">
+                </p>
+        </fieldset>
+
+    </form>
+</body>
+</html>
