@@ -1,0 +1,27 @@
+@charset 'UTF-8';
+
+/*TODAS DEMAIS MIDIAS*/
+
+@media print  {
+    #celular, #pc {
+        display: none;
+    }
+
+    #impressora {
+        display: block;
+    }
+
+    h1 {
+        text-shadow: none;
+        color: black;
+    }
+     main {
+        width: 600px;
+        font-family: 'Courier New', Courier, monospace;
+     }
+
+     p {
+        display: block;
+        font-size: 0.8em;
+     }
+}

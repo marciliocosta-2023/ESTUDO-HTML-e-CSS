@@ -1,0 +1,17 @@
+@charset 'UTF-8';
+
+/*VERSAO MOBILE FIRST*/
+
+@media screen and (min-width:990px) and (max-width: 1500px) {
+    #pc {
+        display: block;
+    }
+
+    #celular {
+        display: none;
+    }
+
+    body {
+        background-image: url(back-pc.jpg);
+    }
+}

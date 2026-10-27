@@ -1,0 +1,17 @@
+@charset 'UTF-8';
+
+/*VERSAO TABLET*/
+
+@media screen and (min-width: 768px) and (max-width: 989px) {
+    #celular, #pc {
+        display: none;
+    }
+
+    #tablet {
+        display: block;
+    }
+
+    body {
+        background-image: url(back-tablet.jpg);
+    }
+}

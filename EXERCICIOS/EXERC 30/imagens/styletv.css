@@ -1,0 +1,17 @@
+@charset 'UTF-8';
+
+/*VERSAO TV*/
+
+@media screen and (min-width:1400px) {
+    #pc, #celular, #tablet {
+        display: none;
+    }
+
+    #tv {
+        display: block;
+    }
+
+    body {
+        background-image: url(back-tv.jpg);
+    }
+}

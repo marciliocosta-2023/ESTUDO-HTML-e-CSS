@@ -1,0 +1,109 @@
+@charset 'UTF-8';
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+    background-color: lightgray;
+}
+
+header > h1 {
+    padding: 30px;
+}
+
+div#menubg {
+    background-color: rgb(172, 171, 171);
+    display: block;
+    padding: 10px;
+}
+
+div#menubg > a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+div#menubg:hover, #abg:hover {
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+}
+
+menu > li {
+    display: block;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.205);
+    text-align: center;
+}
+
+menu {
+    text-align: left;
+    width: 100%;
+}
+
+
+li > a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+
+
+
+li:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 3px 3px 1px black;
+}
+
+
+main {
+    background-color: rgb(83, 83, 83);
+    color: white;
+    text-align: center;
+    width: 750px;
+    display: block;
+    margin: auto;
+}
+
+article {
+    padding: 20px;
+}
+
+article > h1 {
+    padding: 10px;
+}
+
+article > p {
+    text-indent: 1em;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: lightgray;
+    padding: 20px;
+}
+
+#foot {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+#foot:hover {
+    text-decoration: none;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px black;
+}
