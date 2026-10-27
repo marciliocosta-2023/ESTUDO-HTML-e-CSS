@@ -41,6 +41,15 @@
     menu {
         display: none;
     }
+}
 
+@media screen and (min-width: 1400px) {
 
+    body {
+        font-size: 1.5em;
+    }
+
+    main {
+        width: 1200px;
+    }
 }
