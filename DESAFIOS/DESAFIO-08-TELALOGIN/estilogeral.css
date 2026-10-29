@@ -21,8 +21,9 @@ main {
 }
 
 div#login {
-    width: 350px;
-    padding: 20px;
+    width: 45%;
+    padding: 10px 20PX 20PX 20PX;
+    display: inline-block;
 }
 
 #login > .abaixo {
@@ -33,8 +34,9 @@ div#login {
     text-align: center;
 }
 
-#login > p {
-    padding: 5px;
+p.abaixo {
+    width: 320px;
+    padding: 10px 0px;
 }
 
 span#icon {
@@ -43,15 +45,63 @@ span#icon {
     border-radius: 5px;
 }
 
-#loginp1 {
+#loginp1, #loginp2 {
     width: 320px;
     background-color: rgb(102, 1, 102);
     border-radius: 9px;
+    height: 30px;
+}
+
+#loginp1 {
+    height: 30px;
+    margin-bottom: 10px;
+    padding-bottom: 18px;
+}
+
+#loginp2 {
+    height: 30px;
+    margin-bottom: 10px;
+    padding-bottom: 18px;
 }
 
 .loginpp {
     width: 270px;
-    height: 25px;
-    border-radius: 10px;
-    margin-bottom: 12px;
+    height: 90%;
+    border-radius: 5px;
+}
+
+#botaol {
+    width: 320px;
+    height: 30px;
+    margin-bottom: 5px;
+    padding: 0px;
+}
+
+#botaos {
+    width: 320px;
+    height: 30px;
+    margin-bottom: 8px;
+    padding: 2px 0px;
+}
+
+#botaol, #botaos {
+    color: rgb(65, 23, 105);
+    background-color: rgb(208, 202, 214);
+    border: 1px solid rgb(71, 0, 71);
+}
+
+#botaol:hover, #botaos:hover {
+    background-color: white;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+img {
+    display: inline-block;
+    width: 365px;
+    border-radius: 0px 20px 20px 0px;
+    height: 300px;
+    position: fixed;
+    left: 50%;
+    transform: translateY(-87.6%);
 }

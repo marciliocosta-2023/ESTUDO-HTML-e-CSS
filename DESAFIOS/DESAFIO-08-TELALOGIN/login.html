@@ -17,28 +17,28 @@
     <main>
         <div id="login">
             <h2>Login</h2>
-            <p class="abaixo">
-                Seja bem-vindo(a). Faça login para acessar sua conta e poder fazer configurações no seu ambiente.
-            </p>
-
-            <p id="loginp1">
-                <label for="ilogin">
-                    <span id="icon" class="material-symbols-outlined">account_box</span>
-                </label>
-                <input class="loginpp" type="email" name="ilogin" id="ilogin">
-            </p>
-
-            <p id="loginp2">
-                <label for="isenha">
-                    <span id="icon" class="material-symbols-outlined">key</span>
-                </label>
-                <input class="loginpp" type="password" name="isenha" id="isenha">
-            </p>
-
-            <p>
-                <input  type="submit" value="Entrar"><br>
-                <input  type="reset" value="Esqueci a senha">
-            </p>
+            <form action="cadastro.php" method="post">
+                <p class="abaixo">
+                    Seja bem-vindo(a). Faça login para acessar sua conta e poder fazer configurações no seu ambiente.
+                </p>
+                <p id="loginp1">
+                    <label for="ilogin">
+                    </label>
+                        <span id="icon" class="material-symbols-outlined">account_box</span>
+                        <input class="loginpp" type="email" name="ilogin" id="ilogin" placeholder="Seu e-mail..." required minlength="12">
+                </p>
+                <p id="loginp2">
+                    <label for="isenha">
+                        <span id="icon" class="material-symbols-outlined">key</span>
+                    </label>
+                    <input class="loginpp" type="password" name="isenha" id="isenha" placeholder="Sua senha..." required>
+                </p>
+                <p>
+                    <input id="botaol" type="submit" value="ENTRAR"><br>
+                    <input id="botaos" type="reset" value="Esqueci a senha (?)">
+                    <img src="doglogin.jpg" alt="">
+                </p>
+            </form>
         </div>
     </main>
 </body>
