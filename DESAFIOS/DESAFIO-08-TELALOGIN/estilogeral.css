@@ -151,4 +151,12 @@ img {
     span#icon {
         transform: translateY(-6.8%);
     }
+
+    #botaol, #botaos {
+        padding: 10px 0px 19px 0px;
+    }
+
+    #loginp1, #loginp2 {
+        padding-bottom: 20px;
+    }
 }
