@@ -108,16 +108,74 @@ img {
     transform: translateY(-87.6%);
 }
 
-#retrato {
+#retrato, #tablet {
     display: none;
 }
 
 
-@media screen and (max-width: 579px) {
+@media screen and (max-width:579px) {
+    main {
+        width: 350px;
+        height: 450px;
+        font-size: 0.8em;
+        transform: translateY(-17%);
+    }
+
+    h2 {
+        margin-left: 120px;
+    }
+
+    img {
+        display: none; 
+    }
+
+    #retrato {
+        display: block;
+        transform: translateY(4.5%);
+        top: 57%;
+        transform: translateX(-50%);
+        height: 260px;
+        width: 350px;
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    #botaol, #botaos {
+        height: 20px;
+    }
+
+    #loginp1, #loginp2 {
+        height: 10px;
+    }
+
+    .loginpp {
+        position: fixed;
+        height: 5%;
+        transform: translateY(9.6%);
+    }
+
+    span#icon {
+        transform: translateY(-6.8%);
+    }
+
+    #botaol, #botaos {
+        padding: 10px 0px 20px 0px;
+    }
+
+    #loginp1, #loginp2 {
+        padding-bottom: 22px;
+    }
+}
+
+@media screen and (min-width: 579px) and (max-width:768px) {
     main {
         width: 350px;
         height: 490px;
         font-size: 0.8em;
+        transform: translateY(-8%);
+    }
+
+    h2 {
+        margin-left: 120px;
     }
 
     img {
@@ -153,10 +211,66 @@ img {
     }
 
     #botaol, #botaos {
-        padding: 10px 0px 18px 0px;
+        padding: 10px 0px 20px 0px;
     }
 
     #loginp1, #loginp2 {
         padding-bottom: 22px;
+    }
+}
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 998px) {
+    main {
+        height:620px ;
+        width: 450px;
+        transform: translateY(-8%);
+    }
+
+    h2 {
+        width: 420px;
+    }
+
+    p.abaixo {
+        line-height: 24px;
+        width: 440px;
+    }
+
+    #botaos, #botaol {
+        transform: translateY(10%);
+        padding-top: 10px;
+        padding-bottom: 25px;
+        width: 420px;
+    }
+
+    #loginp1, #loginp2 {
+        height: 30px;
+        width: 420px;
+    }
+
+    .loginpp {
+        height: 38px;
+        width: 370px;
+        transform: translateX();
+    }
+
+    span#icon {
+        transform: translateY(25%);
+    }
+    
+    #retrato, img {
+        display: none;
+    }
+
+    #tablet {
+        display: block;
+        transform: translateY(4.5%);
+        top: 55%;
+        transform: translateX(-50%);
+        height: 280px;
+        width: 450px;
+        border-radius: 0px 0px 20px 20px;
     }
 }
