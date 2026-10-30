@@ -43,6 +43,7 @@ span#icon {
     color: white;
     padding: 5px;
     border-radius: 5px;
+    transform: translateY(15.8%) translateX(15%); 
 }
 
 #loginp1, #loginp2 {
@@ -68,6 +69,7 @@ span#icon {
     width: 270px;
     height: 90%;
     border-radius: 5px;
+    transform: translateY(-5%);
 }
 
 #botaol {
@@ -104,4 +106,49 @@ img {
     position: fixed;
     left: 50%;
     transform: translateY(-87.6%);
+}
+
+#retrato {
+    display: none;
+}
+
+
+@media screen and (max-width: 579px) {
+    main {
+        width: 350px;
+        height: 490px;
+        font-size: 0.8em;
+    }
+
+    img {
+        display: none;
+    }
+
+    #retrato {
+        display: block;
+        transform: translateY(4.5%);
+        top: 51%;
+        transform: translateX(-50%);
+        height: 280px;
+        width: 350px;
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    #botaol, #botaos {
+        height: 20px;
+    }
+
+    #loginp1, #loginp2 {
+        height: 10px;
+    }
+
+    .loginpp {
+        position: fixed;
+        height: 3%;
+        transform: translateY(9.6%);
+    }
+
+    span#icon {
+        transform: translateY(-6.8%);
+    }
 }
