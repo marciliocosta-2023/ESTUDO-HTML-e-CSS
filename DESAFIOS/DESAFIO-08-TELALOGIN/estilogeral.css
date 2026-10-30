@@ -113,7 +113,7 @@ img {
 }
 
 
-@media screen and (max-width: 579px) {
+@media screen and (max-width: 733px) {
     main {
         width: 350px;
         height: 490px;
