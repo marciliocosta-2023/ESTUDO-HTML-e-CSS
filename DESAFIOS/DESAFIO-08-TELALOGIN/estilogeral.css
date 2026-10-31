@@ -90,6 +90,7 @@ span#icon {
     color: rgb(65, 23, 105);
     background-color: rgb(208, 202, 214);
     border: 1px solid rgb(71, 0, 71);
+    cursor: pointer;
 }
 
 #botaol:hover, #botaos:hover {
@@ -118,7 +119,7 @@ img {
         width: 350px;
         height: 450px;
         font-size: 0.8em;
-        transform: translateY(-17%);
+        transform: translateY(-8%);
     }
 
     h2 {
@@ -202,7 +203,7 @@ img {
 
     .loginpp {
         position: fixed;
-        height: 3%;
+        height: 4.7%;
         transform: translateY(9.6%);
     }
 
