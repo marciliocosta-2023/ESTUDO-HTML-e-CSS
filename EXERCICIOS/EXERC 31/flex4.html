@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        div.conteiner {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            height: 200px;
+            width: 200px;
+        }
+
+
+        div.conteiner2 {
+            background-color: lightsalmon;
+            height: 300px;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items:center;
+            justify-content: space-between;
+        }
+
+        div.item2 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        div#itemb {
+            align-self: flex-start;
+        }
+
+        #itemc {
+            align-self: flex-end;
+        }
+
+        #itemd {    
+            align-self: stretch;
+        }
+
+        #iteme {
+            align-self: stretch;
+        }
+
+        div.container3 {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-around;
+            align-items: end;
+        }
+
+        img {
+            width:450px;
+            height: 350px;
+        }
+
+        div.item3 {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .centropai {
+        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .centro {
+            height: 400px;
+            width: 500px;
+            background-color: aquamarine;
+        }
+
+
+
+        div.conteiner5 {
+            background-color: lightsalmon;
+
+            height: 600px;
+
+            display: flex;
+            flex-flow: row wrap;
+            align-content: space-between;
+            justify-content: space-between;
+        }
+
+        div.item5 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            padding: 10px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Aprendendo FLEXBOX</h1>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+
+    <h1>Aprendendo FLEXBOX</h1>
+    <div class="conteiner2">
+        <div class="item2">A</div>
+        <div class="item2" id="itemb">B</div>
+        <div class="item2" id="itemc" style="order: -1;">C</div>
+        <div class="item2" id="itemd">D</div>
+        <div class="item2" id="iteme" style="order: -2">E</div>
+        <div class="item2">F</div>
+        <div class="item2">G</div>
+    </div>
+
+
+    <h1>Centralizar com flexbox</h1>
+        <div class="container3">
+            <div class="item3"><img src="dogtablet.jpg" alt="dog"></div>
+            <div class="item3"><img src="dogtablet.jpg" alt="dog" ></div>
+        </div>
+
+    <h1>CENTRALIZAR QUALQUER CAIXA</h1>
+        <div class="centropai">
+            <div class="centro"></div>
+        </div>
+
+         <h1>Aprendendo FLEXBOX</h1>
+        <div class="conteiner5">
+            <div class="item5">A</div>
+            <div class="item5">B</div>
+            <div class="item5">C</div>
+            <div class="item5">D</div>
+            <div class="item5">E</div>
+            <div class="item5">F</div>
+            <div class="item5">G</div>
+        </div>
+</body>
+</html>
