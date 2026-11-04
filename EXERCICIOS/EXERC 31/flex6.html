@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        div.conteiner {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+
+            flex-basis: 50px;
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+
+        div#container2 {
+            display: flex;
+            flex-flow: row nowrap;
+
+            padding: 20px;
+            background-color: aquamarine;
+        }
+
+        div#um {
+            background-color: black;
+
+            flex: 1 0 150px;
+
+            padding: 20px;
+        }
+
+        div#dois {
+            background-color: blue;
+
+            flex: 2 1 150px;
+
+            padding: 20px;
+        }
+
+        div#tres {
+            background-color: azure;
+
+            flex: 3 4 150px;
+
+            padding: 20px;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Aprendendo FLEXBOX</h1>
+    <div class="conteiner">
+        <div class="item">quando esta grande</div>
+        <div class="item">quando esta grandequando esta grande</div>
+        <div class="item">quando esta grandequando esta grandequando esta grande</div>
+    </div>
+
+    <div id="container2">
+        <div id="um">1</div>
+        <div id="dois">2</div>
+        <div id="tres">3</div>
+    </div>
+
+</body>
+</html>

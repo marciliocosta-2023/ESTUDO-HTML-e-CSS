@@ -1,0 +1,138 @@
+@charset 'UTF-8';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: grey;
+    color: white;
+}
+
+header > h1 {
+    padding-top: 10px;
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
+
+#container >  .itemop1, .itemop2, .itemop3, .itemop4, .itemop5, .itemop6 {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    margin:5px;
+    border-radius: 10px;
+}
+
+.itemop1 > a, .itemop2 > a, .itemop3 > a, .itemop4 > a, .itemop5 > a, .itemop6 > a {
+    text-decoration: none;
+    color: white;
+}
+
+#container > .itemop1:hover, .itemop2:hover, .itemop3:hover, .itemop4:hover, .itemop5:hover, .itemop6:hover {
+    color: black;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.itemop1 > a:hover, .itemop2 > a:hover, .itemop3 > a:hover, .itemop4 > a:hover, .itemop5 > a:hover, .itemop6 > a:hover {
+    color: black;
+    font-weight: bold;
+}
+
+#container > .itemh1 {
+    padding: 10px 0px 20px 0px;
+    text-align: center;
+}
+
+#container > a:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+main {
+    height: 100vh;
+}
+
+section > h2 {
+    text-align: center;
+    padding: 20px 10px 20px 10px;
+}
+
+section > p {
+    padding: 10px 15px 30px 15px;
+    text-indent: 2em;
+    line-height: 25px;
+}
+
+
+footer {
+    background-color: rgb(155, 154, 154);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer > p {
+    line-height: 20px;
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    font-weight: bold;
+}
+
+footer > p > a:hover {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 3px;
+    transition: 0.3s;
+}
+
+@media screen and (min-width: 767px) {
+
+    header {
+        padding: 10px;
+    }
+
+    #container {
+        flex-flow: row nowrap;
+        justify-content: end;
+    }
+    
+    .itemh1 {
+        margin-right: auto;
+    }
+
+    .itemop1, .itemop2, .itemop3, .itemop4, .itemop5, .itemop6 {
+        align-self: center;
+        font-size: 0.9em;
+    }
+
+    main > section > p {
+        font-size: 1.4em;
+        line-height: 1.3em;
+    }
+}
+
