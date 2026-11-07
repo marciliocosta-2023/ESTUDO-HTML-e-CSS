@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div.conteiner {
+            border: 3px solid blue;
+            height: 600px;
+            display: grid;
+            grid-template: repeat(7, 1fr) / repeat(6, 1fr) ;
+            place-content: stretch stretch;
+            place-items: stretch stretch ;
+            gap: 0px;
+            grid-auto-rows: 1fr;
+            grid-auto-columns: 1fr;
+        }
+
+        div.item , .item2 {
+            border: 3px solid red;
+            padding: 10px;
+        }
+
+        .caixa1 {
+            grid-area: 1 / 1 / 5 / 3;
+            background-color: brown;
+        }
+
+        .caixa2 {
+            grid-area: 4 / 1 / 6 / 7;
+            background-color: black;
+        }
+
+        .caixa3 {
+            grid-area: 6 / 6 / 7 / 7;
+            background-color: aqua;
+        }
+
+    </style>
+    <title>grid layout</title>
+</head>
+<body>
+    <div class="conteiner"> 
+        <div class="caixa1">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, officiis nulla molestias consectetur dolorum earum, sapiente temporibus sunt laborum consequatur, unde voluptates officia voluptatibus ab voluptas ipsum quasi ratione placeat.</p>
+        </div>
+
+        <div class="caixa2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat maiores molestiae eos a quos nostrum. Officiis nihil iste quos quaerat assumenda veritatis unde. Debitis voluptates atque est, dicta fugit eligendi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex voluptatem, dolores rem non id nobis debitis quam aliquam. Voluptatibus nobis sed saepe excepturi. Quaerat molestiae doloribus, vel debitis deleniti ullam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis obcaecati illum quis possimus quod adipisci facere cum! Ea illo quis tempora in amet atque non id, sequi architecto saepe quibusdam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum sed minima, reprehenderit aspernatur labore voluptatum dignissimos consequatur, distinctio explicabo ducimus libero dolorem aliquam qui? Sunt velit quod ut at odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat obcaecati quis facilis corrupti et suscipit, reprehenderit dolore unde amet illo nobis quidem ab. Aperiam exercitationem laudantium corrupti quod, officiis explicabo! </p>
+        </div>
+
+        <div class="caixa3">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae sequi asperiores odit animi. Nulla culpa, tempora delectus fugit voluptas veniam et. Odio consequatur sunt quos obcaecati cupiditate eveniet sapiente illum?</p>
+        </div>
+    </div>
+</body>
+</html>
