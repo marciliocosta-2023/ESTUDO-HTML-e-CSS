@@ -16,17 +16,17 @@
 body {
     background-color: #1B1D21;
     height: 100vh;
+    margin: auto;
 }
 
 main {
-    height: 100vh;
+    margin: auto;
+    width: 90vw;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
 header {
     font-family: mextrine;
-
     background-color: #1B1D21;
     padding: 10px;
     margin-bottom: 10px;
@@ -56,6 +56,14 @@ img#logoprogramacao {
     color: white;
 }
 
+#menu > ul > li > a:hover {
+    color: black;
+    background-color: #77a829;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
 #menu {
     display: flex;
     flex-flow: row nowrap;
@@ -71,14 +79,32 @@ img#logoprogramacao {
     padding: 20px;
 }
 
+#menu > .final > li {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding:  7px 7px 7px 0px;
+    border-radius: 10px;
+}
+
+#menu > .final > li:hover {
+    border: none;
+}
+
+#menu > .final > li > a:hover {
+    padding-left: 0;
+}
+
+#menu > .final > li > a > #logogithub {
+    transform: translate(15% , 17%);
+}
+
 
 #topo {
-    margin: auto;
     display: grid;
     grid-template: repeat(4, 1fr) repeat(5, 1fr);
-    place-items: space-between;
-    gap: 0px;
-    padding: 10px;
+    place-content: space-between;
+    height: 370px;
+    gap: 150px;
+    margin-bottom: 40px;
     background-color: #1B1D21;
     color: white;
 }
@@ -115,20 +141,20 @@ img#logoprogramacao {
 }
 
 #topo > .ladod {
-    grid-area: 1 / 3 / 4 / 5;
+    background-image: url(Notebook\ neon\ com\ código\ React.png);
+    background-repeat: no-repeat;
+    background-size:  90vh;
+    background-position: center center;
+    grid-area: 1 / 2 / 4 / 5;
 }
 
-#topo > .ladod > .note {
-    transform: translateY(-5%);
-}
 
 #principal {
     display: grid;
     grid-template: repeat(8, 1fr) repeat(9, 1fr);
-    place-items: space-evenly;
-    gap: 15px;
     color: white;
-    padding-left: 30px;
+    padding: 20px;
+    place-content: space-between;
 }
 
 #principal > .p1 > p {
@@ -141,12 +167,19 @@ img#logoprogramacao {
 }
 
 #principal > .p1 {
-    grid-area: 1 / 1 / 5 / 3;
+    grid-area: 1 / 1 / 5 / 2;
 }
 
-#principal > .imgmeio > div {
-    border-right: 1px solid rgba(255, 255, 255, 0.08);
-    transform: translateY(10%);
+#principal > .meio {
+    grid-area: 1 / 2 / 5 / 6;
+    background-image: url(imagemmeio.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    width: 20vw;
+    height: 90%;
+    transform: translate(17%, 10%);
 }
 
 #imgmeio {
@@ -154,7 +187,7 @@ img#logoprogramacao {
 }
 
 #principal > .p2 {
-    grid-area: 1 / 5 / 5 / 9;
+    grid-area: 1 / 6 / 8 / 9;
 }
 
 #principal > .p2 > .h2ep > h3 {
@@ -179,59 +212,89 @@ img#logoprogramacao {
 }
 
 #principal > .p2 {
+    grid-area: 1 / 5 / 8 / 9;
     display: grid;
-    grid-template: repeat(4, 1r) repeat(3, 1fr);
-    gap: 20px;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    gap: 10px;
 }
 
-#principal > .p2 > .h2ep {
-    grid-area: 1 / 1 / 2 / 5;
+#principal > .p2 > h3 {
+    padding-top: 10px;
+    line-height: 1.2em;
+    font-size: 1.5em;
 }
 
-#principal > .p2 > .emblemahtml {
-    grid-area:  2 / 1 / 3 / 2 ;
-    background-color: #1B1D21;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    height: 100%;
+#principal > .p2 > .html {
+    grid-area: 2 / 1 / 3 / 2;
+    border: 1px solid #013db6;
+    width: 50%;
+    background-image: url(emblema-html.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
-#principal > .p2 > .emblemahtml > .htmltrans {
-    transform: translate(22%, 15%);
+#principal > .p2 > .css {
+    grid-area: 3 / 1 / 4 / 2;
+    border: 1px solid #013db6;
+    width: 50%;
+    background-image: url(emblema-css.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
-#principal > .p2 > .emblemacss > .csstrans {
-    transform: translate(48%, 15%);
+#principal > .p2 > .git {
+    grid-area: 2 / 2 / 3 / 3;
+    border: 1px solid #013db6;
+    width: 50%;
+    background-image: url(emblema-git.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
-#principal > .p2 > .emblemagit > .gittrans {
-    transform: translate(23%, 10%);
+#principal > .p2 > .github {
+    grid-area: 3 / 2 / 4 / 3;
+    border: 1px solid #013db6;
+    width: 50%;
+    background-image: url(emblema-github-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
-#principal > .p2 > .emblemagithub > .githubtrans {
-    transform: translate(14%, 7%);
+#principal > .emblemas  {
+    grid-area: 2 / 6 / 5 / 9;
+    background-image: url(emblema-html.png)
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
 }
 
 #principal > .p2 > .emblemacss {
-    grid-area:  2 / 2 / 3 / 3 ;
-    background-color: #1B1D21;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    height: 100%;
+    background-image: url(emblema-css.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
-#principal > .p2 > .emblemagit{
-    grid-area: 3 / 1 / 4 / 2;
-    background-color: #1B1D21;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    height: 100%;
+#principal > .p2 > .emblemagit {
+    background-image: url(emblema-git.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 #principal > .p2 > .emblemagithub {
-    grid-area: 3 / 2 / 4 / 3;
-    background-color: #1B1D21;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    height: 100%;
-} 
+    background-image: url(emblema-github-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
 
+#principal > .p2 > .emblemacss {
+}
 
 .baixo {
     display: grid;
@@ -254,14 +317,24 @@ img#logoprogramacao {
     color: white;
 }
 
-footer {
+#foot {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    padding: 50px;
+    padding: 20px;
     display: flex;
-    place-content: space-around;
+    place-content: space-evenly;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    margin-top: 30px;
 }
 
+#foot > .foot1 > h4 {
+    font-size: 1.4em;
+    padding-bottom: 5px;
+}
+
+#foot > .foot1 > p {
+    font-size: 0.85em;
+}
 
 
 
