@@ -10,7 +10,6 @@
 * {
     padding: 0;
     margin: 0;
-    
 }
 
 body {
@@ -33,12 +32,16 @@ header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-#menu {
-    color: white;
+img#logoprogramacao {
+    transform: translateY(7px);
 }
 
-img#logoprogramacao {
-    transform: translateY(30%);
+#menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
 }
 
 #menu > ul.comeco > li.nome {
@@ -64,13 +67,6 @@ img#logoprogramacao {
     transition: 0.5s;
 }
 
-#menu {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .meio {
     display: flex;
 }
@@ -81,7 +77,7 @@ img#logoprogramacao {
 
 #menu > .final > li {
     border: 1px solid rgba(255, 255, 255, 0.08);
-    padding:  7px 7px 7px 0px;
+    padding:  3px 7px 7px 0px;
     border-radius: 10px;
 }
 
@@ -91,12 +87,14 @@ img#logoprogramacao {
 
 #menu > .final > li > a:hover {
     padding-left: 0;
+    padding-top: 20px;
+
 }
 
 #menu > .final > li > a > #logogithub {
-    transform: translate(15% , 17%);
+    padding-left: 8px;
+    transform: translate(-4px , 3px);
 }
-
 
 #topo {
     display: grid;
@@ -130,7 +128,6 @@ img#logoprogramacao {
     padding-bottom: 20px;
 }
 
-
 #topo > .ladoe > .bio {
     line-height: 1.7em;
     word-spacing: 3px;
@@ -143,179 +140,87 @@ img#logoprogramacao {
 #topo > .ladod {
     background-image: url(Notebook\ neon\ com\ código\ React.png);
     background-repeat: no-repeat;
-    background-size:  90vh;
+    background-size:  contain;
     background-position: center center;
     grid-area: 1 / 2 / 4 / 5;
 }
 
-
 #principal {
     display: grid;
-    grid-template: repeat(8, 1fr) repeat(9, 1fr);
+    grid-template: repeat(8, 1fr) repeat(10, 1fr);
     color: white;
     padding: 20px;
-    place-content: space-between;
+    border-top: 1px solid #77a829;
 }
 
-#principal > .p1 > p {
-    padding: 10px;
-    line-height: 1.3em;
+#principal > .p1  {
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    text-shadow: 3px 1px 1px rgba(0, 0, 0, 0.575);
 }
 
-#principal > .p1 > h3 {
-    font-size: 1.8em;
+#principal > p.p2 {
+    grid-area: 2 / 1 / 3 / 2;
+    padding: 10px 0px 20px 0px;
+    line-height: 1.4em;
+    word-spacing: 0.2em;
 }
 
-#principal > .p1 {
-    grid-area: 1 / 1 / 5 / 2;
+#principal > p.p3 {
+    grid-area: 3 / 1 / 4 / 2;
+    padding-bottom: 10px;
 }
 
-#principal > .meio {
-    grid-area: 1 / 2 / 5 / 6;
+#principal > .p3 > .logos1  {
+    transform: translate(10%, 15%);
+}
+
+#principal > .p4 > .logos2 {
+    transform: translate(10%, 10%);
+}
+
+#principal > .p5 > .logos3 {
+    transform: translate(2%, 20%);
+}
+
+#principal > .p4 {
+    grid-area: 4 / 1 / 5 / 2;
+    padding-bottom: 10px;
+}
+
+#principal > .p5 {
+    grid-area: 5 / 1 / 6 / 2;
+    padding-bottom: 10px;
+}
+
+#principal > .meio  {
+    grid-area: 1 / 2 / 8 / 5;
     background-image: url(imagemmeio.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 20px;
-    width: 20vw;
-    height: 90%;
-    transform: translate(17%, 10%);
 }
 
-#imgmeio {
-    grid-area: 1 / 4 / 4 / 5;
+#principal > .p6 {
+    grid-area: 1 / 6 / 2 / 9;
+    padding: 15px 0px 20px 0px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    text-shadow: 3px 1px 1px rgba(0, 0, 0, 0.575);
 }
 
-#principal > .p2 {
-    grid-area: 1 / 6 / 8 / 9;
-}
 
-#principal > .p2 > .h2ep > h3 {
-    font-size: 1.8em;
-    padding-bottom: 7px;
-}
-
-#principal > .p1 > p {
-    padding-left: 0;
-}
-
-#principal > .p1 > p > .logos1 , .logos2 , .logos3 {
-    transform: translateY(18%);
-}
-
-#principal > .p1 > p > .logos1 {
-    transform: translateX(12%) translateY(12%);
-}
-
-#principal > .p1 > p > .logos3 {
-    transform: translate(-8%, 20%);
-}
-
-#principal > .p2 {
-    grid-area: 1 / 5 / 8 / 9;
-    display: grid;
-    grid-template: 1fr 1fr 1fr / 1fr 1fr;
-    gap: 10px;
-}
-
-#principal > .p2 > h3 {
-    padding-top: 10px;
-    line-height: 1.2em;
-    font-size: 1.5em;
-}
-
-#principal > .p2 > .html {
-    grid-area: 2 / 1 / 3 / 2;
-    border: 1px solid #013db6;
-    width: 50%;
-    background-image: url(emblema-html.png);
+#principal > p.html {
+    grid-area: 2 / 6 / 8 / 10;
+    background-image: url(skills.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 90% 57%;
     background-position: center;
-}
+    border: 1px solid rgba(255, 255, 255, 0.08);
 
-#principal > .p2 > .css {
-    grid-area: 3 / 1 / 4 / 2;
-    border: 1px solid #013db6;
-    width: 50%;
-    background-image: url(emblema-css.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-
-#principal > .p2 > .git {
-    grid-area: 2 / 2 / 3 / 3;
-    border: 1px solid #013db6;
-    width: 50%;
-    background-image: url(emblema-git.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-
-#principal > .p2 > .github {
-    grid-area: 3 / 2 / 4 / 3;
-    border: 1px solid #013db6;
-    width: 50%;
-    background-image: url(emblema-github-removebg-preview.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-
-#principal > .emblemas  {
-    grid-area: 2 / 6 / 5 / 9;
-    background-image: url(emblema-html.png)
-    background-repeat: no-repeat
-    background-size: contain
-    background-position: center
-}
-
-#principal > .p2 > .emblemacss {
-    background-image: url(emblema-css.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-
-#principal > .p2 > .emblemagit {
-    background-image: url(emblema-git.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-
-#principal > .p2 > .emblemagithub {
-    background-image: url(emblema-github-removebg-preview.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-
-#principal > .p2 > .emblemacss {
-}
-
-.baixo {
-    display: grid;
-    grid-template: repeat(2,1fr) repeat(4,1fr);
-}
-
- .baixo > .um {
-    grid-area: 1 / 1 / 2 / 2;
-}
-
- .baixo > .dois {
-    grid-area: 1 / 2 / 2 / 3;
-}
-
- .baixo > .tres {
-    grid-area: 1 / 3 / 2 / 4;
-}
-
-#terceiro {
-    color: white;
-}
+}    
 
 #foot {
     font-family: Arial, Helvetica, sans-serif;
@@ -323,6 +228,7 @@ img#logoprogramacao {
     padding: 20px;
     display: flex;
     place-content: space-evenly;
+    align-items: center;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     margin-top: 30px;
 }
@@ -333,8 +239,77 @@ img#logoprogramacao {
 }
 
 #foot > .foot1 > p {
-    font-size: 0.85em;
+    font-size: 0.8em;
+}
+
+#foot > .foot2 > a {
+    color:  white;
+    text-decoration: none;
+    margin: 20px;
+}
+
+#foot > .foot2 > a:hover {
+    background-color: #77a829;
+}
+
+#foot > .foot2 > a.ft1 {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#foot > .foot2 > a.ft2 {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#foot > .foot2 > a.ft3 {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#foot > .foot2 > a.ft1 > img, #foot > .foot2 > a.ft2 > img, #foot{
+    transform: translateY(3.3px);
+}
+
+#foot > .foot2 > a.ft3 > img {
+    transform: translateY(5.7px);
 }
 
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    #topo > .ladoe > h1 {
+    padding: 10px 10px 20px 20px;
+    font-size: 2.1em;
+}
+    
+    #topo > .ladod {
+    background-size:  70%;
+    background-position: right;
+    grid-area: 1 / 2 / 4 / 5;
+}
+
+#principal > .meio  {
+    display: none;
+}
+
+#principal > .p6 {
+    grid-area: 1 / 5 / 2 / 9;
+}
+
+
+#principal > p.html {
+    grid-area: 2 / 4 / 8 / 10;
+    background-image: url(skillstablet.png);
+    background-size: 45%;
+}
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    
+}
 
