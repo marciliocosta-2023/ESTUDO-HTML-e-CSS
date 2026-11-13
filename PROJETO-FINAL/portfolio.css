@@ -67,8 +67,8 @@ img#logoprogramacao {
     transition: 0.5s;
 }
 
-.meio {
-    display: flex;
+.meio > li > a {
+    padding: 15px;
 }
 
 .meio > li {
@@ -87,7 +87,7 @@ img#logoprogramacao {
 
 #menu > .final > li > a:hover {
     padding-left: 0;
-    padding-top: 20px;
+    padding-top: 15px;
 
 }
 
@@ -109,7 +109,7 @@ img#logoprogramacao {
 
 #topo > .ladoe {
     grid-area: 1 / 1 / 4 / 3;
-    padding-top: 50px
+    padding-top: 30px
 }
 
 #topo > .ladoe > .acima {
@@ -117,24 +117,28 @@ img#logoprogramacao {
     background-color: #77a829;
     padding: 3px;
     border-radius: 10px;
-    transform: translateX(15%);
     width:110px;
     font-size: 0.9em;
+    margin: 0px 0px 10px 15px;
 }
 
 #topo > .ladoe > h1 {
     padding: 0px 20px 0px 20px;
-    font-size: 2.7em;
+    font-size: 2.5em;
     padding-bottom: 20px;
+    width: 57%;
 }
 
 #topo > .ladoe > .bio {
     line-height: 1.7em;
     word-spacing: 3px;
+    width: 50%;
 }
 
 #topo > .ladoe > h1 > .destaque {
     color: #77a829;
+    margin-left: 25%;
+    display: inline-block;
 }
 
 #topo > .ladod {
@@ -160,11 +164,12 @@ img#logoprogramacao {
     text-shadow: 3px 1px 1px rgba(0, 0, 0, 0.575);
 }
 
-#principal > p.p2 {
+#principal > .p2 {
     grid-area: 2 / 1 / 3 / 2;
     padding: 10px 0px 20px 0px;
-    line-height: 1.4em;
+    line-height: 1.5em;
     word-spacing: 0.2em;
+    width: 370px;
 }
 
 #principal > p.p3 {
@@ -195,32 +200,69 @@ img#logoprogramacao {
 }
 
 #principal > .meio  {
-    grid-area: 1 / 2 / 8 / 5;
-    background-image: url(imagemmeio.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    grid-area: 1 / 2 / 8 / 6;
     border-radius: 20px;
 }
 
+#principal > .meio > img {
+    width: 70%;
+    height: 70%;
+    border-radius: 20px;
+    margin: auto;
+}
+
 #principal > .p6 {
-    grid-area: 1 / 6 / 2 / 9;
+    grid-area: 1 / 6 / 8 / 10;
     padding: 15px 0px 20px 0px;
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
-    text-shadow: 3px 1px 1px rgba(0, 0, 0, 0.575);
+
+    display: grid;
+    grid-template: 1fr 2fr 2fr / 1fr 1fr;
+    place-items: center center;
 }
 
+#principal > .p6 > div {
+    height: 100px;
+    width: 120px;
+    border: 1.5px solid rgba(255, 255, 255, 0.08);
+    background-color: rgba(49, 49, 49, 0.418);
+    border-radius: 12px;
+    margin-bottom: 5px;
+}
 
-#principal > p.html {
-    grid-area: 2 / 6 / 8 / 10;
-    background-image: url(skills.png);
-    background-repeat: no-repeat;
-    background-size: 90% 57%;
-    background-position: center;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+#principal > .p6 > div:hover {
+    color: #1B1D21;
+    background-color: #77a829;
+}
 
+#principal > .p6 > div > img , span {
+    margin: auto;
+    display: block;
+    padding:3px;
+    font-weight: bold;
+}
+
+#principal > .p6 > h2 {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+#principal > .p6 > div.html { 
+    grid-area: 2 / 1 / 3 / 2;
 }    
+
+#principal > .p6 > div.css { 
+    grid-area: 2 / 2 / 3 / 3;
+}  
+
+#principal > .p6 > div.git { 
+    grid-area: 3 / 1 / 4 / 2;
+}  
+
+#principal > .p6 > div.github { 
+    grid-area: 3 / 2 / 4 / 3;
+}  
+
 
 #foot {
     font-family: Arial, Helvetica, sans-serif;
@@ -280,36 +322,140 @@ img#logoprogramacao {
 
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    
+   
+    #menu > .meio {
+        border: 1px solid #77a82973;
+        border-radius: 20px;
+    }
+
+    .meio > li > a {
+    padding: 10px;
+    }
+
+    #topo > .ladoe {
+        padding-top: 10px;
+    }
+
     #topo > .ladoe > h1 {
     padding: 10px 10px 20px 20px;
-    font-size: 2.1em;
-}
+    font-size: 2.2em;
+    width: 80%;
+    padding: 10px 0;
+    }
+
+    #topo > .ladoe > .bio {
+        padding: 0;
+    }
     
     #topo > .ladod {
     background-size:  70%;
     background-position: right;
     grid-area: 1 / 2 / 4 / 5;
-}
+    }
 
-#principal > .meio  {
-    display: none;
-}
+    #principal > .p2 , .p3 , .p4 , .p5 {
+        margin: auto;
+        width: 70%;
+    }
 
-#principal > .p6 {
-    grid-area: 1 / 5 / 2 / 9;
-}
+    #principal > .meio  {
+        display: none;
+    }
 
+    #principal > .p6 {
+        gap: 20px;
+    }
 
-#principal > p.html {
-    grid-area: 2 / 4 / 8 / 10;
-    background-image: url(skillstablet.png);
-    background-size: 45%;
-}
 }
 
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
+    #menu {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+    }
+
+    #principal > .meio  {
+        display: none;
+    }
+
+    #topo > .ladoe{
+        display: grid;
+        grid-template: 1fr 3fr 2fr / 1fr;
+        height: 80%;
+        place-items: center;
+        gap: -5px;
+    }
+
+    #topo > .ladoe > .acima {
+        grid-area: 1 / 1 / 2 / 1;
+        height: 45%;
+    }
+
+    #topo > .ladoe > h1 {
+        grid-area: 2 / 1 / 3 / 1;
+        font-size: 1.8em;
+        width: 50%;
+        padding-top: 0;
+    }
+
+    #topo > .ladoe > .bio {
+        grid-area: 3 / 1 / 4 / 1;
+        height: 100%;
+        width: 70%;
+        margin: auto;
+    }
+
+    #topo > .ladod {
+        display: none;
+    }
+
+    #principal {
+        display: grid;
+        grid-template: repeat(2,1fr) / 1fr;
+        place-items: center;
+    }
+
+    #principal > .p1 {
+        grid-area: 1 / 1 / 2 / 1;
+    }
+
+    #principal > .p2 {
+        grid-area: 2 / 1 / 3 / 1;
+        width: 100%;
+    }
+
+    #principal > .p3 , .p4 , .p5 {
+        display: none;
+    }
+
+    #principal > .p6 {
+        grid-area: 3 / 1 / 4 / 1 ;
+    }
+
+    #principal > .p6 > div {
+        margin: 15px;
+    }
+
+    #foot {
+        display: grid;
+        grid-template: 1fr / 2fr 3fr;
+        place-items: center end;
+    }
+
+    #foot > .foot2 > a.ft1 > img, #foot > .foot2 > a.ft2 > img, #foot{
+        transform: translateY(4px);
+    }
+
+    #foot > .foot2 > a.ft3 > img {
+        transform: translateY(6px);
+    }
+
+    #foot > .foot2 > a.ft1, #foot > .foot2 > a.ft2, #foot > .foot2 > a.ft3{
+        margin: 5px;
+        font-size: 0.8em;
+    }
     
 }
 
